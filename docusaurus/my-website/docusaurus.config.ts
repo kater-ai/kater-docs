@@ -4,8 +4,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Kater Documentation',
-  tagline: 'Learn how we cater data pipelines to you with comprehensive documentation and learning resources.',
-  favicon: 'img/kater_favicon.ico',
+  tagline: 'Learn how we cater data pipelines to you.',
+  favicon: 'img/Favicon_kater_docs.png',
 
   // Set the production url of your site here
   url: 'https://docs.kater.ai',
@@ -38,14 +38,14 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/kater-ai/docs/docusaurus/my-website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/kater-ai/docs/docusaurus/my-website/blog/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -55,13 +55,17 @@ const config: Config = {
   ],
 
   themeConfig: {
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/Kater-Social-Card.png',
     navbar: {
-      title: 'My Site',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Kater Logo',
+        src: 'img/kater-docs.png',
       },
       items: [
         {
@@ -121,7 +125,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Kater, Inc.`,
     },
     prism: {
       theme: prismThemes.github,

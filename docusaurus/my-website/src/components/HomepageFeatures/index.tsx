@@ -10,32 +10,29 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'What is Kater?',
+    Svg: require('@site/static/img/CodeButler.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Kater is a platform which enables you to build production-ready, scalabe data pipelines using software engineering best practices.
       </>
-    ),
+    ), 
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Connect your Warehouse',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Connect Kater to your data warehouse in 5 minutes and start tracking your data estate.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Start Building',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Learn about Kater's development framework and how we accelerate your data transformation workflow.
       </>
     ),
   },

@@ -9,3 +9,26 @@
   height: 200px;
   width: 200px;
 }
+
+[data-theme='dark'] {
+  --ifm-background-color: #001219;
+  --ifm-contrast-background-dark-value: #001219;
+  --ifm-color-primary-contrast-background: #001219;
+  --ifm-color-secondary-contrast-background: #001219;
+  --ifm-hero-background-color: #001219;
+  --ifm-background-surface-color: #1e343b;
+  --ifm-button-background-color: #08668a;
+  --ifm-footer-background-color: #001219;
+  --ifm-navbar-background-color: #001219;
+
+  --ifm-color-primary: rgb(45, 161, 207);
+  --ifm-color-primary-dark: rgb(20, 132, 176);
+  --ifm-color-primary-darker: #0e6f96;
+  --ifm-color-primary-darkest: #105976;
+  --ifm-color-primary-light: #6bc5e9;
+  --ifm-color-primary-lighter: #98d1e8;
+  --ifm-color-primary-lightest: #c0d6df;
+  --docusaurus-highlighted-code-line-bg: #02668d;
+
+  --ifm-font-family-base: 'Open Sans', sans-serif;
+}
