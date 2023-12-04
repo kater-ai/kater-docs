@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Create a Page
+# Set up Snowflake Permissions
 
 Add **Markdown or React** files to `src/pages` to create a **standalone page**:
 

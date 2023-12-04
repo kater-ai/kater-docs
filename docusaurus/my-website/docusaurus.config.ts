@@ -72,7 +72,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Guides',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -89,8 +89,8 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Guides',
+              to: '/docs/guides',
             },
           ],
         },
@@ -98,17 +98,13 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/KDBA93ZMGz',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/questions/tagged/kater',
+            }
           ],
         },
         {

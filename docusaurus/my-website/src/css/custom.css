@@ -53,3 +53,7 @@ html[data-theme='dark'] {
 
   --ifm-font-family-base: 'Open Sans', sans-serif;
 }
+
+.sidebar {
+  font-size: 12px;
+}
