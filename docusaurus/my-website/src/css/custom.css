@@ -1,0 +1,59 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-background-color: #001219;
+  --ifm-contrast-background-dark-value: #001219;
+  --ifm-color-primary-contrast-background: #001219;
+  --ifm-color-secondary-contrast-background: #001219;
+  --ifm-hero-background-color: #001219;
+  --ifm-background-surface-color: #001219;
+  --ifm-button-background-color: #08668a;
+  --ifm-footer-background-color: #001219;
+  --ifm-navbar-background-color: #001219;
+
+  --ifm-color-primary: #004864;
+  --ifm-color-primary-dark: #00354a;
+  --ifm-color-primary-darker: #012634;
+  --ifm-color-primary-darkest: #001219;
+  --ifm-color-primary-light: #004e6c;
+  --ifm-color-primary-lighter: #006e9a;
+  --ifm-color-primary-lightest: #0085B8;
+  --ifm-code-font-size: 90%;
+  
+  --docusaurus-highlighted-code-line-bg: #001219;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+html[data-theme='dark'] {
+  --ifm-font-color-base: #c0c0c0;
+
+  --ifm-background-color: #001219;
+  --ifm-contrast-background-dark-value: #001219;
+  --ifm-color-primary-contrast-background: #001219;
+  --ifm-color-secondary-contrast-background: #001219;
+  --ifm-hero-background-color: #001219;
+  --ifm-background-surface-color: #1e343b;
+  --ifm-button-background-color: #08668a;
+  --ifm-footer-background-color: #001219;
+  --ifm-navbar-background-color: #00212f;
+
+  --ifm-color-primary: #0089a4;
+  --ifm-color-primary-dark: rgb(20, 132, 176);
+  --ifm-color-primary-darker: #0e6f96;
+  --ifm-color-primary-darkest: #105976;
+  --ifm-color-primary-light: #6bc5e9;
+  --ifm-color-primary-lighter: #98d1e8;
+  --ifm-color-primary-lightest: #c0d6df;
+  --docusaurus-highlighted-code-line-bg: #02668d;
+
+  --ifm-font-family-base: 'Open Sans', sans-serif;
+}
+
+.sidebar {
+  font-size: 12px;
+}
