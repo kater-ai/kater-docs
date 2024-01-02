@@ -1,8 +1,0 @@
-{
-  "label": "Supported Warehouses",
-  "position": 1,
-  "link": {
-    "type": "generated-index",
-    "description": "Connect your Snowflake account to Kater."
-  }
-}

@@ -57,3 +57,8 @@ html[data-theme='dark'] {
 .sidebar {
   font-size: 12px;
 }
+
+.beta-text {
+  font-size: smaller;
+  color: dodgerblue;
+}
