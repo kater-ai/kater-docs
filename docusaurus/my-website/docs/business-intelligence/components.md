@@ -2,4 +2,5 @@
 sidebar_position: 1
 ---
 
-# About Connections
+# Discover your Data
+

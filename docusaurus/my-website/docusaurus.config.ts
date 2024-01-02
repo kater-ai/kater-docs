@@ -42,10 +42,11 @@ const config: Config = {
         },
         blog: {
           showReadingTime: true,
+          blogTitle: 'The Kater Kafé',
+          blogDescription: 'Where all Katerers have coffee and talk about everything data-related',
+          postsPerPage: 'ALL',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/kater-ai/docs/docusaurus/my-website/blog/',
         },
         theme: {
           customCss: './src/css/custom.css',
