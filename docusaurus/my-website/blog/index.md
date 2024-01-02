@@ -10,3 +10,5 @@ Welcome to the Kater Kafé, where we discuss all things related to data analytic
 If there are any more resources you'd like, or additional questions, please reach out to us at support@kater.ai.
 
 Let's have some koffee! 
+
+<!-- truncate -->
