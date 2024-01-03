@@ -1,0 +1,49 @@
+name: Deploy to Amazon ECS
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  ECR_REPOSITORY: client-portal
+  ECS_SERVICE: client-portal
+  ECS_CLUSTER: KaterProd
+  ECS_TASK_DEFINITION: src/projects/client-portal/ecs-task-definition.json
+  CONTAINER_NAME: client-portal
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@0e613a0980cbf65ed5b322eb7a1e075d28913a83
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Build web project
+        id: build-web
+        run: |
+          npm run build
+
+      - name: Deploy WebApp
+        uses: reggionick/s3-deploy@v4
+        with:
+          folder: build
+          bucket: ${{ vars.S3_BUCKET }}
+          bucket-region: ${{ vars.AWS_REGION }}
+          dist-id: ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}
+          invalidation: /
+          delete-removed: true
+          no-cache: true
+          private: true
+          files-to-include: '{.*/**,**}'
