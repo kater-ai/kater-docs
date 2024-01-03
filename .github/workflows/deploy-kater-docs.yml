@@ -33,6 +33,7 @@ jobs:
       - name: Build web project
         id: build-web
         run: |
+          npm install
           npm run build
 
       - name: Deploy WebApp
