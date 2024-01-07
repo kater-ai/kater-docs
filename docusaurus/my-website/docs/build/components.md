@@ -71,7 +71,3 @@ Every component consists of a
 2. SQL Query
 
 
-
-## Build an Asset Component
-
-
