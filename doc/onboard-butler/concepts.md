@@ -23,9 +23,9 @@ If a Concept doesn't have a tag, it defaults to "always relevant", and everythin
 When a user asks a question, Butler looks for these tags in the question. If it finds a match, it will then look for the `Concept` that the tag is associated with.
 
 ### 2. Context
-Contextual information that is attached to the tag. (i.e. "When the question asks about sales, always start with KATER.DW.FACT_SALES as the base table").
+Contextual information that is attached to the `Concept`. (i.e. "When the question asks about sales, always start with KATER.DW.FACT_SALES as the base table").
 
-The context attached to each `Concept` gets programmatically passed into Butler every time someone asks a question and it detects a tag that is associated with a `Concept`.
+The context attached to each `Concept` gets programmatically passed into Butler every time someone asks a question and it detects a tag that is associated with a `Concept`. Or, if no tag exists, the context gets passed in every time someone asks a question.
 
 ## Example
 **Concept:** `Sales`
