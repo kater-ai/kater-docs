@@ -1,0 +1,8 @@
+{
+  "label": "Onboard Butler",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Treat Butler like a junior data analyst joining your team. There's a series of knowledge transfer that must occur in order for the analyst to understand the nuances of your data. Here at Kater, we try to make that process as automated and natural as possible."
+  }
+}
