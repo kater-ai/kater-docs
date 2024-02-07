@@ -8,7 +8,7 @@ dbt introduced a different approach of bringing software development best practi
 
 After speaking to over 30 companies regarding their experiences with dbt, we want to elucidate our findings on some pitfalls of dbt. 
 
-Although dbt is currently the best in-class data transformation tool, companies are starting to notice some key problems that dbt creates and fails to address. These are problems we're solving here at Kater.
+Although dbt is currently the best in-class data transformation tool, companies are starting to notice some key problems that dbt creates and fails to address.
 
 <!-- truncate -->
 
@@ -37,8 +37,6 @@ This causes two main problems:
 
     ![typical-dag](../blog/img/typicaldag.png)
 
-    ![typical-dag-kater](../blog/img/typicaldag_kater.png)
-
 
 ## Excessive Manual Work
 Documentation and testing, while powerful, demand extensive manual effort often unrealistic for smaller teams. As a result, data documentation is incomplete, tests underutilized, and lineage limited to dbt transformations. 
@@ -64,7 +62,3 @@ Some companies we've engaged with invested over a year rebuilding their dbt mode
 
 ## Conclusion
 Unanimously, data leaders agree that there is still a very limited selection of good data transformation tools and platforms, and are eager for other options. 
-
-Here at Kater, we're working on addressing these issues with a platform that simplifies and accelerates data engineering workflows, and makes data accessible to developers **and** stakeholders. 
-
-For updates and feature releases, follow us on [LinkedIn](https://www.linkedin.com/company/kater-ai/?viewAsMember=true). 
