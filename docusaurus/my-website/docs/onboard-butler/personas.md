@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# Components
+# Personas
 
 A **component**<sup style={{color: "dodgerblue", fontSize: "0.8rem"}}>Beta</sup> is a block of transformation code. It is saved as a `.sql` file and represents one of two things: 
 1. A data warehouse asset
