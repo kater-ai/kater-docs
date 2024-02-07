@@ -24,10 +24,11 @@ Just like your data team onboards a new data analyst, Butler starts off as a jun
 Through a continuous feedback loop of learning, Butler has the potential to become a data steward who guides your company towards data-driven decision making.
 
 ## Quickstart
-1. [Connect your data warehouse](./category/connect)
-2. Onboard Butler with a couple questions
-3. Set up your Personas
-4. Set up Global Semantics & Metrics
+1. [Connect your data warehouse](./category/connect) (2 min)
+2. [Set up your Personas](./onboard-butler/personas) (5 min)
+3. [Set up Concepts](./onboard-butler/concepts) (15 min)
+4. [Set up Metrics](./onboard-butler/metrics) (5 min)
+5. [Set up Global Semantics](./onboard-butler/semantics) (5 min)
 
 ## How it works
 ### Knowledge sources
@@ -75,4 +76,4 @@ While stakeholders can start retrieving answers to their questions faster, data 
 We aim to make Kater a fun, interactive, curiosity-driven platform which encourages its users to utilize data on a daily basis, from open-ended discovery and exploration, to detailed white-paper analyses.
 
 
-Ready to get started? Connect your data warehouse.
+Ready to get started? [Connect your data warehouse.](./category/connect)
