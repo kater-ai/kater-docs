@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Concepts
 
-A `Concept` is a collection of terms that represent similar domains about your business. 
+A `Concept` is a collection of logical steps that represent similar domains about your business. 
 
 Think about how you would teach a new data analyst when they first join your team. How would you walk them through your data house? How would you help them decide which tables to use depending on the question? How would you classify the different types of main concepts your company deals with? 
 

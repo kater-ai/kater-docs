@@ -15,15 +15,15 @@ Kater can connect to Snowflake using the `snowflake` connection type. This guide
 
 ## Prerequisites
 ### Create a Role
-Ensure the default role of the account being used, or the role you provide in the connection, has necessary grants for all the objects in your databases.
+In your Snowflake UI, ensure the default role of the account being used, or the role you provide in the connection, has necessary grants for all the objects in your databases.
 
-The role should have the following grants:
+The Snowflake role should have the following grants:
 - `USAGE` and `MONITOR` on the database (for the information schema to be accessible).
 - Read-only access to all the tables, views, and materialized views in the database that you want Kater to access.
 
 Following [access control framework design](../../blog/Access%20Control%20Framework%20Design), you can create a Kater-specific role and grant the necessary permissions to it. Then, you can assign this role to the user you use to connect to Snowflake.
 
-### Set Permissions for the Role
+### Set Permissions for the Role in Snowflake
 If you haven't already set up access permissions in Snowflake, you can do so by following the script below:
 
 ```sql
@@ -73,7 +73,9 @@ grant all on future views in database identifier($database_name) to role identif
 grant all on future materialized views in database identifier($database_name) to role identifier($access_role);
 ```
 
-## Connection Setup
+## Kater Connection Setup
+Go to your Kater Portal and follow these steps to connect to Snowflake.
+
 1. Click on the `Connect` tab on the sidebar.
 
 2. Add your Snowflake credentials and click `Save`. 
