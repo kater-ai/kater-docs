@@ -24,6 +24,7 @@ Just like your data team onboards a new data analyst, Butler starts off as a jun
 
 Through a continuous feedback loop of learning, Butler has the potential to become a data steward who guides your company towards data-driven decision making.
 
+
 In these docs, you'll learn how to best onboard Butler to your company's data estate.
 
 ## Quickstart
@@ -37,6 +38,7 @@ In these docs, you'll learn how to best onboard Butler to your company's data es
 Butler connects to various sources to obtain the necessary context required to answer data questions accurately. 
 
 ![sources](../static/img/data_sources_butler.png)
+
 
 Currently, most of Butler's immediate info comes directly from you data warehouse's metadata upon connection. 
 

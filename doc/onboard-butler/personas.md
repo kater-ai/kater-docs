@@ -37,4 +37,3 @@ This influences
 1. The tables we pass into Butler for additional context
 2. The semantics and additional context we provide for Butler
 3. The responses Butler provides to the user
-
