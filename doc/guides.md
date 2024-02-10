@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Welcome Katerers!
 
-![IDE](../static/img/what_IS_KATER_1.png)
+![blurb](../static/img/blurb.jpg)
 
 ## What is Kater? 
 
@@ -19,16 +19,18 @@ The more you use Kater, the better it gets.
 
 Butler is your data agent. 
 
+### The Junior Intern
 Just like your data team onboards a new data analyst, Butler starts off as a junior intern with limited knowledge about your database. Over time, he grows and learns the nuances of your semantic layer, metrics, business objectives, and intricacies of your data warehouse. 
 
 Through a continuous feedback loop of learning, Butler has the potential to become a data steward who guides your company towards data-driven decision making.
+
+In these docs, you'll learn how to best onboard Butler to your company's data estate.
 
 ## Quickstart
 1. [Connect your data warehouse](./category/connect) (2 min)
 2. [Set up your Personas](./onboard-butler/personas) (5 min)
 3. [Set up Concepts](./onboard-butler/concepts) (15 min)
-4. [Set up Metrics](./onboard-butler/metrics) (5 min)
-5. [Set up Global Semantics](./onboard-butler/semantics) (5 min)
+4. [Set up Global Metrics & Semantics](./onboard-butler/metmetrics_semanticsrics) (5 min)
 
 ## How it works
 ### Knowledge sources
@@ -36,7 +38,9 @@ Butler connects to various sources to obtain the necessary context required to a
 
 ![sources](../static/img/data_sources_butler.png)
 
-Currently, most of Butler's immediate info comes directly from you data warehouse's metadata upon connection. Additional info comes from your global semantic layer, metrics, concepts, and data catalog. This additional context gets programatically passed into Butler's context depending on the question you ask.
+Currently, most of Butler's immediate info comes directly from you data warehouse's metadata upon connection. 
+
+Additional info comes from your global semantic layer, metrics, concepts, and data catalog. This additional context gets programatically passed into Butler's context depending on the question you ask.
 
 In the future we plan to integrate with your entire modern data stack-- data governance tools like Alation, transformation tools like dbt, business intelligence tools like Tableau, and admin tools like Jira/Slack. This will provide a more holistic and automatic method of obtaining auxiliary business context for your company's data.
 
@@ -54,13 +58,18 @@ With built-in feedback mechanisms, Butler learns from your corrections and valid
 ## Why Kater?
 We're a team of seasoned data engineers and analysts solving the problem of data accessibility and data literacy across organizations.
 
-Prior to generative AI, a stakeholder accessed data through channels like Jira, Slack, and your Business Intelligence (BI) platform. The problems with this existing workflow are:
+### The Data Revolution
+Prior to Generative AI, stakeholders accessed data through channels like Jira, Slack, and your Business Intelligence (BI) platform. 
+
+The problems with this existing workflow are:
 
 * Jira and Slack as "data service" options are inherently unscalable and time-consuming for both parties. 
 
 * Business Intelligence (BI) platforms like Tableau provide a very narrow view into your database, limiting the scope of questions and answers someone can obtain.  
 
-Kater doesn't replace these options; rather, it functions as the glue in your data stack, serving as a stable, self-learning, and optimized data agent. It integrates with your existing infrastructure, offering insights and support in areas where the data team may be constrained by time or resources.
+Kater doesn't replace these options; rather, it functions as the glue in your data stack, serving as a stable, self-learning, and optimized data agent. 
+
+It integrates with your existing infrastructure, offering insights and support in areas where the data team may be constrained by time or resources.
 
 ### Look, a data team member! It's a unicorn!
 Data has largely become a rare comodity due to the limited channels in which stakeholders can access the data team. 
