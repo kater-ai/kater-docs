@@ -11,28 +11,28 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'What is Kater?',
-    Svg: require('@site/static/img/CodeButler.svg').default,
+    Svg: require('@site/static/img/Prep.svg').default,
     description: (
       <>
-        Kater is a platform which enables you to build production-ready, scalabe data pipelines using software engineering best practices.
+        Kater is the data agent that gets better the more you use it. It surfaces insights previously limited by the scope of specialized data teams.
       </>
     ), 
   },
   {
-    title: 'Connect your Warehouse',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Prepare your Semantic Layer',
+    Svg: require('@site/static/img/Categorize.svg').default,
     description: (
       <>
-        Connect Kater to your data warehouse in 5 minutes and start tracking your data estate.
+        Kater helps data teams prepare, categorize, and define their semantics and business logic to prepare their data for LLM understanding. 
       </>
     ),
   },
   {
-    title: 'Start Building',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Start Asking',
+    Svg: require('@site/static/img/Ask.svg').default,
     description: (
       <>
-        Learn about Kater's development framework and how we accelerate your data transformation workflow.
+        Cultivate curiosity and ask questions about your data. Kater will help you understand and interpret the answers.
       </>
     ),
   },

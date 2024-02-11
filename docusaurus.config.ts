@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Kater Documentation',
-  tagline: 'Learn how we cater data pipelines to you.',
+  tagline: 'Learn how we cater data to you.',
   favicon: 'img/Favicon_kater_docs.png',
 
   // Set the production url of your site here
@@ -72,53 +72,11 @@ const config: Config = {
           label: 'Guides',
         },
         { to: '/blog', label: 'Kater Kafé', position: 'left' },
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Guides',
-              to: '/docs/guides',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Discord',
-              href: 'https://discord.gg/KDBA93ZMGz',
-            },
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/kater',
-            }
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Kater, Inc.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Kater.AI, Inc.`,
     },
     prism: {
       theme: prismThemes.github,
