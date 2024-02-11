@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Welcome Katerers!
 
-![blurb](../static/img/blurb.jpg)
+![intro_1](../static/img/Intro.png)
 
 ## What is Kater? 
 

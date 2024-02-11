@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Kater Documentation',
-  tagline: 'Learn how we cater data pipelines to you.',
+  tagline: 'Learn how we cater data to you.',
   favicon: 'img/Favicon_kater_docs.png',
 
   // Set the production url of your site here
@@ -76,7 +76,7 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      copyright: `Copyright © ${new Date().getFullYear()} Kater, Inc.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Kater.AI, Inc.`,
     },
     prism: {
       theme: prismThemes.github,
