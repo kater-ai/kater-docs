@@ -3,9 +3,6 @@ sidebar_position: 1
 ---
 
 # Release Notes 
-
-<!-- For every new release, use the same exact format as below, but change the (Current Version) tag to wrap around the most recent version. 
-Follow Thoughtspot's docs: https://docs.thoughtspot.com/cloud/latest/notes#new -->
 ## v0.0.1 Release (Current Version) <FontAwesomeIcon icon="fa-solid fa-fire" />
 Exciting news! Kater v0.0.1 is now available. ***The first ever version!***
 
@@ -22,5 +19,5 @@ For a complete list of known issues in this release, see [Known issues](/docs/ab
 
 #### For the First User
 ##### *Getting Started with Kater*
-> Users now can request for priority access to Kater's web UI through our [Waitlist](https://www.kater.ai/waitlist). Once you have access, read more about how to get started in the [Welcome doc](/docs/guides#-lets-start-building). 
+> Users now can request for priority access to Kater's web UI through our [Waitlist](https://www.kater.ai/waitlist). Once you have access, read more about how to get started in the [Welcome doc](/docs/guides). 
 
