@@ -31,7 +31,7 @@ In these docs, you'll learn how to best onboard Butler to your company's data es
 1. [Connect your data warehouse](./category/connect) (2 min)
 2. [Set up your Personas](./onboard-butler/personas) (5 min)
 3. [Set up Concepts](./onboard-butler/concepts) (15 min)
-4. [Set up Global Metrics & Semantics](./onboard-butler/metmetrics_semanticsrics) (5 min)
+4. [Set up Global Metrics & Semantics](./onboard-butler/metrics_semantics) (5 min)
 
 ## How it works
 ### Knowledge sources
