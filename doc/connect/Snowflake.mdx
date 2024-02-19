@@ -78,10 +78,28 @@ Once your Snowflake role and user is ready, go to your Kater Portal and follow t
 
 1. Click on the `Connect` tab on the sidebar.
 
-2. Add your Snowflake credentials and click `Save`. 
+<div style={{ display: "flex", justifyContent: "center", padding: "2rem 0 3rem 0" }}>
+    <img src={require("../../static/img/ConnectSidebar.png").default} width="150" />
+</div>
 
-![Add Snowflake](../../static/img/snowflake_connection.png)
+2. Under `Data Store`, select `Snowflake`.
 
-3. Wait a minute for your metadata to be parsed. 
+<div style={{ display: "flex", justifyContent: "center", padding: "2rem 0 3rem 0" }}>
+    <img src={require("../../static/img/DataStore.png").default} width="400" />
+</div>
 
-4. You're ready to start!
+3. Add your Snowflake credentials and click `Connect`. 
+
+<div style={{ display: "flex", justifyContent: "center", padding: "2rem 0 3rem 0" }}>
+    <img src={require("../../static/img/ConnectionSnowflake.png").default} width="400" />
+</div>
+
+4. Select the databases, schemas, and tables you want Kater to have access to. The tables you do not select will not be parsed and will not be available in Kater.
+
+<div style={{ display: "flex", justifyContent: "center", padding: "2rem 0 3rem 0" }}>
+    <img src={require("../../static/img/SelectTablesSnowflake.png").default} width="400" />
+</div>
+
+4. Wait a minute for your metadata to be parsed. 
+
+5. You're ready to start [onboarding Butler](../category/onboard-butler)!
