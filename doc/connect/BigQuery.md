@@ -43,7 +43,7 @@ Go to your Kater Portal and follow these steps to connect to BigQuery.
 3. Add your BigQuery Project ID and JSON Key Type as defined above, and click `Connect`. 
 
 <div style={{ display: "flex", justifyContent: "center", padding: "2rem 0 3rem 0" }}>
-    <img src={require("../../static/img/ConnectionBigQuery.png").default} width="500" />
+    <img src={require("../../static/img/ConnectionBQ.png").default} width="500" />
 </div>
 
 4. Go to the Metadata Tab, click `Fetch Metadata`, and select the tables you want Kater to have access to. 
