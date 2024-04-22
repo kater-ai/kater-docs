@@ -29,7 +29,7 @@ In these docs, you'll learn how to best onboard Butler to your company's data es
 
 ## Quickstart
 1. [Connect your data warehouse](./category/connect) (2 min)
-2. [Review the auto-generated Data Map](./onboard-butler/data_map) (5 min)
+2. [Review the auto-generated Data Map](./data-map/data_map_intro) (5 min)
 2. [Add questions to the Query Bank](./onboard-butler/query_bank) (5 min)
 3. [(Optional) Set up Personas, Concepts, Metrics, & Semantics](./onboard-butler/concepts) (15 min)
 4. Start asking questions!
