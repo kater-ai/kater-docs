@@ -29,9 +29,10 @@ In these docs, you'll learn how to best onboard Butler to your company's data es
 
 ## Quickstart
 1. [Connect your data warehouse](./category/connect) (2 min)
-2. [Set up your Personas](./onboard-butler/personas) (5 min)
-3. [Set up Concepts](./onboard-butler/concepts) (15 min)
-4. [Set up Global Metrics & Semantics](./onboard-butler/metrics_semantics) (5 min)
+2. [Review the auto-generated Data Map](./onboard-butler/data_map) (5 min)
+2. [Add questions to the Query Bank](./onboard-butler/query_bank) (5 min)
+3. [(Optional) Set up Personas, Concepts, Metrics, & Semantics](./onboard-butler/concepts) (15 min)
+4. Start asking questions!
 
 ## How it works
 ### Knowledge sources
@@ -40,9 +41,9 @@ Butler connects to various sources to obtain the necessary context required to a
 ![sources](../static/img/data_sources_butler.png)
 
 
-Currently, most of Butler's immediate info comes directly from you data warehouse's metadata upon connection. 
+Currently, most of Butler's immediate info comes directly from you data warehouse's metadata upon connection. Butler infers your join keys and semantic relationships between your tables to generate a Data Map. 
 
-Additional info comes from your global semantic layer, metrics, concepts, and data catalog. This additional context gets programatically passed into Butler's context depending on the question you ask.
+Additional info comes from your global semantic layer, metrics, concepts, and data dictionary. This additional context gets programatically passed into Butler's context depending on the question you ask.
 
 In the future we plan to integrate with your entire modern data stack-- data governance tools like Alation, transformation tools like dbt, business intelligence tools like Tableau, and admin tools like Jira/Slack. This will provide a more holistic and automatic method of obtaining auxiliary business context for your company's data.
 

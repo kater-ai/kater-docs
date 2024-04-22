@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Metrics & Semantics
@@ -10,8 +10,9 @@ We are determined to help you and your company establish a centralized, consiste
 
 `Metric` = a calculation represented by a SQL formula.
 
+:::tip
 Think of the `Metrics` tab as the single place to find all the formulas and definitions for your company's KPIs and general business terms. 
-
+:::
 These can range from standard metrics like "MRR" and "CAC" to more nuanced, company-specific metrics like "Marketing Channel Efficiency" or "Sales Conversion Funnel". 
 
 Each `Metric` can be assigned to a Persona(s). 
@@ -49,9 +50,7 @@ You can rest assured that all future questions using this `Metric` will be updat
 
 `Semantic` = a column name that appears multiple times across your database. 
 
-The `Semantics` tab takes your most commonly used columns across your entire database and helps you assign synonyms and definitions to them.
-
-We query your database and count the column names that appear most frequently. You can then assign synonyms and definitions to these columns.
+The `Semantics` tab takes your most commonly used columns across your entire database and helps you assign synonyms and definitions to them. Kater queries your database and counts the column names that appear most frequently. You can then assign synonyms and definitions to these columns.
 
 These global synonyms ensures that everyone in your organization speaks the same language.
 
