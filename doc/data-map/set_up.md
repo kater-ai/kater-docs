@@ -32,9 +32,6 @@ Learn more about the difference between a Star/Snowflake data model and an OLTP 
 If you have a STAR/Snowflake data model, Kater helps you generate the join keys between each table.
 
 To generate the most accurate join keys for you, please label each table a `FACT`, `DIMENSION`, or `LOOK UP`. 
-:::note
-It defaults to `OTHER` if you don't label the table. 
-:::
 
 <div style={{ display: "flex", justifyContent: "center", padding: "0rem 0 3rem 0" }}>
     <img src={require("../../static/img/Relationships.png").default} width="900" />
