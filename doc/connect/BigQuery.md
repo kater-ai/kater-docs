@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # BigQuery
@@ -55,4 +55,4 @@ Go to your Kater Portal and follow these steps to connect to BigQuery.
 
 5. Click `Save Metadata`. 
 
-6. You're ready to start [onboarding Butler](../category/onboard-butler)!
+6. You're ready to start [setting up your Data Map](../data-map/data_map_intro)!

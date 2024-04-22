@@ -13,7 +13,7 @@ It is auto-generated based on the table names, columns, and descriptions.
     </video>
 </div>
 
-## How the Data Map is Used - Relationships
+## How the Data Map is Used: Relationships
 <div style={{ display: "flex", justifyContent: "center", padding: "2rem 0 3rem 0" }}>
     <img src={require("../../static/img/Whatisarelationship.png").default} width="900" />
 </div>
