@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # MS-SQL
@@ -49,4 +49,4 @@ Once your MS-SQL user is ready, go to your Kater Portal and follow these steps t
 
 5. Click `Save Metadata`. 
 
-6. You're ready to start [onboarding Butler](../category/onboard-butler)!
+6. You're ready to start [setting up your Data Map](../data-map/data_map_intro)!
