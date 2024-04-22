@@ -1,25 +1,30 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Concepts
 
 A `Concept` is a collection of logical steps that represent similar domains about your business. 
 
+:::tip
 Think about how you would teach a new data analyst when they first join your team. How would you walk them through your data house? How would you help them decide which tables to use depending on the question? How would you classify the different types of main concepts your company deals with? 
+:::
 
 We try to keep `Concepts` as free-form as possible, allowing you to create them as you see fit for the nuances of your business use-case. 
 
 ## What is a Concept?
-A `Concept` consists of: 
-
 ### 1. Tags (optional)
-The specific keywords that trigger the `Concept` to be recognized by Butler (i.e. "sales", "revenue", "profit", etc).
+The specific keywords that trigger the `Concept` to be recognized by Butler.
+<div style={{ display: "flex", justifyContent: "center", padding: "2rem 0 3rem 0" }}>
+    <img src={require("../../static/img/ConceptTags.png").default} width="900" />
+</div>
 
 A `Concept` can have multiple tags, or it can have no tags at all.
 
-If a Concept doesn't have a tag, it defaults to "always relevant", and everything in the Context automatically gets passed to Butler no matter the question.
-    
+:::note
+If a Concept **does not** have a tag, it **defaults** to `always relevant`, and everything in the Context automatically gets passed to Butler no matter the question.
+:::
+
 When a user asks a question, Butler looks for these tags in the question. If it finds a match, it will then look for the `Concept` that the tag is associated with.
 
 ### 2. Context
@@ -27,7 +32,7 @@ Contextual information that is attached to the `Concept`. (i.e. "When the questi
 
 The context attached to each `Concept` gets programmatically passed into Butler every time someone asks a question and it detects a tag that is associated with a `Concept`. Or, if no tag exists, the context gets passed in every time someone asks a question.
 
-## Example
+## Example of a Concept
 **Concept:** `Sales`
 
 **Tags:** `sales, revenue, profit, sold`
