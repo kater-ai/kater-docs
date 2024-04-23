@@ -3,16 +3,22 @@ sidebar_position: 1
 ---
 
 # Query Bank
+:::info 
 This serves as the foundation for Butler's memory -- all previously asked questions + their SQL lives here.
 
 This is the playbook of all questions asked to the data team. The more you use it, the better Butler will get.
+:::
 
 <div style={{ display: "flex", justifyContent: "center", padding: "2rem 0 3rem 0" }}>
-    <img src={require("../../static/img/QueryBank.png").default} width="900" />
+    <img src={require("../../static/img/QueryBank.png").default} width="100%" />
 </div>
 
 ## Adding to the Bank
-There are 2 ways to add to the Query Bank.
+:::info
+There are 2 ways to add to the Query Bank: 
+1. Through the `Query Bank` tab
+2. Through the <FontAwesomeIcon icon="fa-solid fa-thumbs-up" /> / <FontAwesomeIcon icon="fa-solid fa-thumbs-down" /> feedback loop in `Ask` tab
+:::
 
 ### 1. Through the Query Bank tab (Technical Users)
 Navigate to "Query Bank" in the sidebar, and you should be on the "Add to Bank" tab.
@@ -30,7 +36,7 @@ What are the most commonly asked questions to the data team? What are some quest
 4. Save the Question. Now it will appear in the Query Bank and will inform Butler's future decisions.
 
 <div style={{ display: "flex", justifyContent: "center", padding: "2rem 0 3rem 0" }}>
-    <video controls width="900">
+    <video controls width="100%">
         <source src={require("../../static/img/AddToQueryBank.mp4").default} />
     </video>
 </div>
@@ -38,7 +44,7 @@ What are the most commonly asked questions to the data team? What are some quest
 :::tip 
 If you can't think of a question and you already have a SQL query, Butler can generate the question for you based on your SQL query using this button:
 <div style={{ display: "flex", justifyContent: "center", padding: "1rem 0 2rem 0" }}>
-    <img src={require("../../static/img/GenerateQForMe.png").default} width="900" />
+    <img src={require("../../static/img/GenerateQForMe.png").default} width="100%" />
 </div>
 :::
 
@@ -47,12 +53,12 @@ Users (non-admin) can add to the query bank when they add feedback about a quest
 
 These show up in the Query Bank as `unverified`. 
 
-:::note
+:::info
 The questions will be stored in Butler's memory for future use **only after** an admin verifies the question.
 :::
 
 <div style={{ display: "flex", justifyContent: "center", padding: "2rem 0 3rem 0" }}>
-    <video controls width="900">
+    <video controls width="100%">
         <source src={require("../../static/img/AddFeedback.mp4").default} />
     </video>
 </div>
@@ -65,7 +71,9 @@ One of the biggest challenges of any data team is **keeping track** of all asked
 
 Typically, data analysts receive the same question, try to find the query they wrote 3 months ago, then spend an additional 30 minutes re-familiarizing themselves with the query to tweak it enough to serve the stakeholder's needs.
 
+:::tip
 Now, every question a data analyst solves can be used to inform a future similar question. No more repeat queries!
+:::
 
 **Furthermore, every stakeholder asks a question because they're solving a business problem.** We want to help you keep track of those business problems, the questions associated with them, and the decision made.
 
@@ -74,5 +82,6 @@ Our preliminary experiments show that storing questions and their associated SQL
 
 Further, questions that utilize a previously verified question of up to 60% similarity have a **98% accuracy rate.**
 
+:::tip
 This means that by the time you have **50 saved questions** in the Query Bank, you'll have solved for **50*10 = 500 iterations** of different questions people can ask in the future.
-
+:::

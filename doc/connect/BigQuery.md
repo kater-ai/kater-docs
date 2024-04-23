@@ -6,12 +6,14 @@ sidebar_position: 4
 
 Kater can connect to BigQuery using the `BigQuery` connection type. 
 
+:::info
 ## How it Works
 * Kater securely stores your BigQuery credentials in your browser memory. 
 * When you connect to BigQuery, Kater temporarily uses your credentials via SSL to authenticate with BigQuery. 
 * Your credentials are **never** stored in Kater's database.  
 * Your selected metadata (table names, columns, datatypes) are stored in Kater's database, but never your data. 
 * Everything is encrypted at rest and in-transit. 
+:::
 
 ## Prerequisites
 1. [Create a BigQuery role](https://cloud.google.com/iam/docs/creating-custom-roles) with at least the following permissions:
