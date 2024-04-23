@@ -3,19 +3,21 @@ sidebar_position: 1
 ---
 
 # What is the Data Map?
+:::info 
 The data map defines all the semantic and SQL relationships between your tables.
 
 It is auto-generated based on the table names, columns, and descriptions. 
+:::
 
 <div style={{ display: "flex", justifyContent: "center", padding: "2rem 0 3rem 0" }}>
-    <video controls width="900">
+    <video controls width="100%">
         <source src={require("../../static/img/DataMap.mp4").default} />
     </video>
 </div>
 
 ## How the Data Map is Used: Relationships
 <div style={{ display: "flex", justifyContent: "center", padding: "2rem 0 3rem 0" }}>
-    <img src={require("../../static/img/Whatisarelationship.png").default} width="900" />
+    <img src={require("../../static/img/Whatisarelationship.png").default} width="100%" />
 </div>
 
 Each edge on the map represents a `Relationship`.

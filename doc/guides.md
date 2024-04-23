@@ -22,17 +22,20 @@ Butler is your data agent.
 ### The Junior Intern
 Just like your data team onboards a new data analyst, Butler starts off as a junior intern with limited knowledge about your database. Over time, he grows and learns the nuances of your semantic layer, metrics, business objectives, and intricacies of your data warehouse. 
 
+:::tip
 Through a continuous feedback loop of learning, Butler has the potential to become a data steward who guides your company towards data-driven decision making.
-
+:::
 
 In these docs, you'll learn how to best onboard Butler to your company's data estate.
 
+:::info
 ## Quickstart
 1. [Connect your data warehouse](./category/connect) (2 min)
 2. [Review the auto-generated Data Map](./data-map/data_map_intro) (5 min)
 2. [Add questions to the Query Bank](./onboard-butler/query_bank) (5 min)
 3. [(Optional) Set up Personas, Concepts, Metrics, & Semantics](./onboard-butler/concepts) (15 min)
 4. Start asking questions!
+:::
 
 ## How it works
 ### Knowledge sources
@@ -41,7 +44,9 @@ Butler connects to various sources to obtain the necessary context required to a
 ![sources](../static/img/data_sources_butler.png)
 
 
+:::info
 Currently, most of Butler's immediate info comes directly from you data warehouse's metadata upon connection. Butler infers your join keys and semantic relationships between your tables to generate a Data Map. 
+:::
 
 Additional info comes from your global semantic layer, metrics, concepts, and data dictionary. This additional context gets programatically passed into Butler's context depending on the question you ask.
 
@@ -59,7 +64,7 @@ With built-in feedback mechanisms, Butler learns from your corrections and valid
 
 
 ## Why Kater?
-We're a team of seasoned data engineers and analysts solving the problem of data accessibility and data literacy across organizations.
+We're a team of seasoned ex-Microsoft, Kaiser Permanente, Crexi, and Abbott data engineers and analysts solving the problem of data accessibility and data literacy across organizations.
 
 ### The Data Revolution
 Prior to Generative AI, stakeholders accessed data through channels like Jira, Slack, and your Business Intelligence (BI) platform. 
@@ -70,7 +75,9 @@ The problems with this existing workflow are:
 
 * Business Intelligence (BI) platforms like Tableau provide a very narrow view into your database, limiting the scope of questions and answers someone can obtain.  
 
+:::info 
 Kater doesn't replace these options; rather, it functions as the glue in your data stack, serving as a stable, self-learning, and optimized data agent. 
+:::
 
 It integrates with your existing infrastructure, offering insights and support in areas where the data team may be constrained by time or resources.
 

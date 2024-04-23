@@ -37,5 +37,5 @@ The endpoint will follow the format `https://metadata.{YOUR_ACCESS_URL}/graphql`
 Find your Access URL for your region and plan [here](https://docs.getdbt.com/docs/cloud/about-cloud/access-regions-ip-addresses).
 
 :::note
-For example, if you have a multi-tenant dbt Cloud plan in North America, your Access URL would be `cloud.getdbt.com`.
+For example, if you have a multi-tenant dbt Cloud plan in North America, your Access URL would be `cloud.getdbt.com`, and your endpoint would be `https://metadata.cloud.getdbt.com/graphql`.
 :::

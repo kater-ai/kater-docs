@@ -21,7 +21,7 @@ The specific keywords that trigger the `Concept` to be recognized by Butler.
 
 A `Concept` can have multiple tags, or it can have no tags at all.
 
-:::note
+:::warning
 If a Concept **does not** have a tag, it **defaults** to `always relevant`, and everything in the Context automatically gets passed to Butler no matter the question.
 :::
 
