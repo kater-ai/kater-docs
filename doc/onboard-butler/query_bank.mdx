@@ -3,8 +3,9 @@ sidebar_position: 1
 ---
 
 # Query Bank
-:::info 
-This serves as the foundation for Butler's memory -- all previously asked questions + their SQL lives here.
+:::info This serves as the foundation for Butler's memory. 
+
+All previously asked questions + their SQL lives here.
 
 This is the playbook of all questions asked to the data team. The more you use it, the better Butler will get.
 :::
@@ -14,8 +15,7 @@ This is the playbook of all questions asked to the data team. The more you use i
 </div>
 
 ## Adding to the Bank
-:::info
-There are 2 ways to add to the Query Bank: 
+:::info There are 2 ways to add to the Query Bank: 
 1. Through the `Query Bank` tab
 2. Through the <FontAwesomeIcon icon="fa-solid fa-thumbs-up" /> / <FontAwesomeIcon icon="fa-solid fa-thumbs-down" /> feedback loop in `Ask` tab
 :::
@@ -30,10 +30,10 @@ What are the most commonly asked questions to the data team? What are some quest
 :::
 
 #### Adding a Question
-1. Ask a question and have Butler generate SQL for you.
-2. Edit the SQL accordingly & review the output. 
-3. Check the data sources to understand how Butler is getting to the answer. 
-4. Save the Question. Now it will appear in the Query Bank and will inform Butler's future decisions.
+1. **Ask a question** and have Butler generate SQL for you.
+2. **Edit** the SQL accordingly & review the output. 
+3. Check the **data sources** to understand how Butler is getting to the answer. 
+4. **Save the Question.** Now it will appear in the Query Bank and will inform Butler's future decisions.
 
 <div style={{ display: "flex", justifyContent: "center", padding: "2rem 0 3rem 0" }}>
     <video controls width="100%">
@@ -53,7 +53,7 @@ Users (non-admin) can add to the query bank when they add feedback about a quest
 
 These show up in the Query Bank as `unverified`. 
 
-:::info
+:::warning
 The questions will be stored in Butler's memory for future use **only after** an admin verifies the question.
 :::
 
@@ -63,10 +63,11 @@ The questions will be stored in Butler's memory for future use **only after** an
     </video>
 </div>
 
+---
 
 ## Why a Query Bank?
 The reason is two-fold. It serves a business purpose as well as a technical purpose. 
-### Business Use Case 
+### <FontAwesomeIcon icon="fa-solid fa-business-time" /> Business Use Case 
 One of the biggest challenges of any data team is **keeping track** of all asked questions, the **SQL queries** associated with those questions, and the **decisions made** after answering those questions.
 
 Typically, data analysts receive the same question, try to find the query they wrote 3 months ago, then spend an additional 30 minutes re-familiarizing themselves with the query to tweak it enough to serve the stakeholder's needs.
@@ -77,7 +78,7 @@ Now, every question a data analyst solves can be used to inform a future similar
 
 **Furthermore, every stakeholder asks a question because they're solving a business problem.** We want to help you keep track of those business problems, the questions associated with them, and the decision made.
 
-### Technical Use Case
+### <FontAwesomeIcon icon="fa-solid fa-screwdriver-wrench" /> Technical Use Case
 Our preliminary experiments show that storing questions and their associated SQL, indexing, and searching through them using RAG **improves generated SQL accuracy up to 88%.** 
 
 Further, questions that utilize a previously verified question of up to 60% similarity have a **98% accuracy rate.**
