@@ -3,8 +3,7 @@ sidebar_position: 1
 ---
 
 # What is the Data Map?
-:::info 
-The data map defines all the semantic and SQL relationships between your tables.
+:::info  The data map defines all the semantic and SQL relationships between your tables.
 
 It is auto-generated based on the table names, columns, and descriptions. 
 :::

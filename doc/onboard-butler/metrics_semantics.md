@@ -3,8 +3,9 @@ sidebar_position: 4
 ---
 
 # Metrics & Semantics
-
+:::info
 We are determined to help you and your company establish a centralized, consistent semantic layer to ensure that everyone in your organization speaks the same language. 
+:::
 
 ## Metrics
 

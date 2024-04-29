@@ -3,10 +3,12 @@ sidebar_position: 1
 ---
 
 # dbt Cloud
+:::info
 Kater connects to your dbt Cloud API to pull metadata (table descriptions, etc), and compiled metrics queries to help support Butler.
+:::
 
 ## Navigate to Integration Page
-Sidebar --> Connect --> Integrations
+Connect --> Integrations
 <div style={{ display: "flex", justifyContent: "center", padding: "2rem 0 3rem 0" }}>
     <img src={require("../../../static/img/dbtInt.png").default} width="500" />
 </div>
