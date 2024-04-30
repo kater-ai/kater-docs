@@ -1,0 +1,5 @@
+giscus-widget {
+  max-height: 700px;
+  overflow: scroll;
+  display: inline-block;
+}
