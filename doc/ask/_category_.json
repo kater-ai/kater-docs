@@ -1,0 +1,8 @@
+{
+  "label": "Ask",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "The foundation of all conversations and analyses happen here."
+  }
+}
