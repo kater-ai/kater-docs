@@ -8,9 +8,8 @@ Kater can connect to Snowflake using the `snowflake` connection type.
 
 :::info
 ## How it Works
-* Kater securely stores your Snowflake credentials in your browser memory. 
-* When you connect to Snowflake, Kater temporarily uses your credentials via SSL to authenticate with Snowflake. 
-* Your credentials are **never** stored in Kater's database.  
+* Kater encrypts your credentials via an encryption key stored in AWS secrets manager. 
+* When you connect to Snowflake, Kater temporarily uses your credentials via SSL to authenticate with Snowflake.  
 * Your selected metadata (table names, columns, datatypes) are stored in Kater's database, but never your data. 
 * Everything is encrypted at rest and in-transit. 
 :::

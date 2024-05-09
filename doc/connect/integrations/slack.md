@@ -7,6 +7,9 @@ sidebar_position: 3
 
 We recommend setting Butler up in a global data channel. 
 :::
+<div style={{ display: "flex", justifyContent: "center", padding: "2rem 0 3rem 0" }}>
+    <img src={require("../../../static/img/ask_slack.png").default} width="900" />
+</div>
 
 ## Create Butler: your new Slack app
 ### 1. Slack Apps Page

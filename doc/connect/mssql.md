@@ -8,10 +8,9 @@ Kater can connect to MS-SQL using the `mssql` connection type. This guide will w
 
 :::info
 ## How it Works
-* Kater securely stores your MS-SQL credentials in your browser memory.
+* Kater encrypts your credentials via an encryption key stored in AWS secrets manager. 
 * You connect your MS-SQL server instance to Kater's server by white-listing Kater's static IP address.
 * When you establish a connection to MS-SQL through Kater, Kater temporarily uses your credentials via SSL to authenticate with MS-SQL.
-* Your credentials are never stored in Kater's database.
 * Your selected metadata (table names, columns, datatypes) are stored in Kater's database, but never your data.
 * Everything is encrypted at rest and in-transit.
 :::
