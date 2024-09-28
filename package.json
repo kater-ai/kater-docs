@@ -15,9 +15,9 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/core": "3.0.1",
-    "@docusaurus/plugin-content-blog": "^3.0.1",
-    "@docusaurus/preset-classic": "3.0.1",
+    "@docusaurus/core": "^3.5.2",
+    "@docusaurus/plugin-content-blog": "^3.5.2",
+    "@docusaurus/preset-classic": "^3.5.2",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-regular-svg-icons": "^6.5.1",
@@ -27,16 +27,16 @@
     "@iconify/react": "^4.1.1",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
-    "plugin-image-zoom": "github:flexanalytics/plugin-image-zoom",
+    "plugin-image-zoom": "github:ataft/plugin-image-zoom",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-player": "^2.16.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.0.1",
-    "@docusaurus/tsconfig": "3.0.1",
-    "@docusaurus/types": "3.0.1",
+    "@docusaurus/module-type-aliases": "^3.5.2",
+    "@docusaurus/tsconfig": "^3.5.2",
+    "@docusaurus/types": "^3.5.2",
     "typescript": "~5.2.2"
   },
   "browserslist": {
