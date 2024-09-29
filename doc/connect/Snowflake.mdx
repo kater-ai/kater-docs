@@ -10,7 +10,7 @@ Kater can connect to Snowflake using the `snowflake` connection type.
 ## How it Works
 * Kater encrypts your credentials via an encryption key stored in AWS secrets manager. 
 * When you connect to Snowflake, Kater temporarily uses your credentials via SSL to authenticate with Snowflake.  
-* Your selected metadata (table names, columns, datatypes) are stored in Kater's database, but never your data. 
+* Your selected metadata (table names, columns, datatypes) are stored in Kater's database. 
 * Everything is encrypted at rest and in-transit. 
 :::
 
@@ -26,14 +26,18 @@ Following [access control framework design](../../blog/Access%20Control%20Framew
 ### Set Permissions for the Role in Snowflake
 If you don't already have a role and user set up, you can use the following script to help you.
 
+<details>
+<summary>Script to create new role in Snowflake</summary>
+<p>
+Replace variables with appropriate names.
 ```sql
-set user_username='username';
-set user_password='password';
-set warehouse_size='warehouse_size';
-set warehouse_name='warehouse_name';
-set access_role='name_of_access_role';
-set functional_role='name_of_functional_role';
-set database_name='database_name';
+SET user_username='username';
+SET user_password='password';
+SET warehouse_size='warehouse_size';
+SET warehouse_name='warehouse_name';
+SET access_role='name_of_access_role';
+SET functional_role='name_of_functional_role';
+SET database_name='database_name';
 
 -- Set role for grants
 USE ROLE USERADMIN;
@@ -58,43 +62,48 @@ GRANT USAGE,MONITOR ON ALL SCHEMAS IN DATABASE identifier($database_name) TO ROL
 GRANT USAGE,MONITOR ON FUTURE SCHEMAS IN DATABASE identifier($database_name) TO ROLE identifier($access_role);
 
 -- Grant permissions to use the new warehouse
-grant select on warehouse identifier($warehouse_name) to role identifier($access_role);
+GRANT SELECT ON WAREHOUSE identifier($warehouse_name) TO ROLE identifier($access_role);
 
 -- Grant permissions for current objects in database to access role
-grant all on all schemas in database identifier($database_name) to role identifier($access_role);
-grant all on all tables in database identifier($database_name) to role identifier($access_role);
-grant all on all views in database identifier($database_name) to role identifier($access_role);
-grant all on all materialized views in database identifier($database_name) to role identifier($access_role);
+GRANT ALL ON ALL SCHEMAS IN DATABASE identifier($database_name) TO ROLE identifier($access_role);
+GRANT ALL ON ALL TABLES IN DATABASE identifier($database_name) TO ROLE identifier($access_role);
+GRANT ALL ON ALL VIEWS IN DATABASE identifier($database_name) TO ROLE identifier($access_role);
+GRANT ALL ON ALL MATERIALIZED VIEWS IN DATABASE identifier($database_name) TO ROLE identifier($access_role);
 
 -- Grant permissions for future objects in database to access role
-grant all on future schemas in database identifier($database_name) to role identifier($access_role);
-grant all on future tables in database identifier($database_name) to role identifier($access_role);
-grant all on future views in database identifier($database_name) to role identifier($access_role);
-grant all on future materialized views in database identifier($database_name) to role identifier($access_role);
+GRANT ALL ON FUTURE SCHEMAS IN DATABASE identifier($database_name) TO ROLE identifier($access_role);
+GRANT ALL ON FUTURE TABLES IN DATABASE identifier($database_name) TO ROLE identifier($access_role);
+GRANT ALL ON FUTURE VIEWS IN DATABASE identifier($database_name) TO ROLE identifier($access_role);
+GRANT ALL ON FUTURE MATERIALIZED VIEWS IN DATABASE identifier($database_name) TO ROLE identifier($access_role);
 ```
+
+</p>
+</details>
 
 ## Connect to Kater
 Once your Snowflake role and user is ready, go to your Kater Portal and follow these steps to connect to Snowflake.
 
-1. Click on the `Connect` tab on the sidebar.
+### 1. Click on the `Connect` tab on the sidebar.
 
 <div style={{ display: "flex", justifyContent: "center", padding: "2rem 0 3rem 0" }}>
     <img src={require("../../static/img/ConnectSidebar.png").default} width="150" />
 </div>
 
-2. Under `Data Store`, select `Snowflake`.
+### 2. Under `Data Store`, select `Snowflake`.
 
 <div style={{ display: "flex", justifyContent: "center", padding: "2rem 0 3rem 0" }}>
     <img src={require("../../static/img/DataStore_SNOWFLAKE.png").default} width="900" />
 </div>
 
-3. Add your Snowflake credentials and click `Connect`. 
+### 3. Add your Snowflake credentials.
+Click `Test Connection` to test, and click `Save Connection` to save. 
 
+### 4. Go to the `Metadata` tab on the top left.
 <div style={{ display: "flex", justifyContent: "center", padding: "2rem 0 3rem 0" }}>
-    <img src={require("../../static/img/ConnectionSnowflake.png").default} width="400" />
+    <img src={require("../../static/img/Metadata_tab.png").default} width="400" />
 </div>
 
-4. Select the databases, schemas, and tables you want Kater to have access to. 
+### 5. Select the databases, schemas, and tables you want Kater to have access to. 
 :::note
 The tables you do not select will not be parsed and will not be available in Kater.
 :::
@@ -102,6 +111,20 @@ The tables you do not select will not be parsed and will not be available in Kat
     <img src={require("../../static/img/SelectTablesDW.png").default} width="400" />
 </div>
 
-5. Click `Save Metadata`. 
+### 6. Click `Save and Process Metadata`. 
+:::tip 
+To import new tables, click the `Refresh` button on the bottom to retrieve new metadata.
+<div style={{ display: "flex", justifyContent: "center", padding: "1rem 0 1rem 0" }}>
+    <img src={require("../../static/img/retrieve_metadata.png").default} width="300" />
+</div>
+:::
 
-6. You're ready to start [setting up your Data Map](../data-map/data_map_intro)!
+### 7. You should see the tables being processed on the right, with 2 background jobs running: 
+* **Description Generator:** We use AI to auto-generate descriptions for you where we haven't already found dbt descriptions for. 
+* **Profiler:** For all varchar columns, we obtain a sample of data. For all numeric columns, we profile a min/max.
+
+<div style={{ display: "flex", justifyContent: "center", padding: "1rem 0 3rem 0" }}>
+    <img src={require("../../static/img/all_tables.png").default} width="1000" />
+</div>
+
+### 8. You're ready to [create a Persona](../personas/) so you can add these tables to a team.

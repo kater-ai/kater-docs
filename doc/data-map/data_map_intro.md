@@ -36,3 +36,5 @@ Using a combination of GenAI and existing data from dbt, Butler can infer the jo
 The data map is the foundation for how Butler knows how and when to join multiple tables together. 
 
 Setting up the data map correctly is crucial for any data team to start using Kater to its full potential. 
+
+[Instructions to set up your data map are here.](./set_up)

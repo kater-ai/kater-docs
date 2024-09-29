@@ -3,8 +3,8 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Kater Documentation',
-  tagline: 'Learn how we cater data to you.',
+  title: 'Kater.ai Documentation Portal',
+  tagline: 'Turn non-technical business experts into data analytics leads.',
   favicon: 'img/Favicon_kater_docs.png',
 
   // Set the production url of your site here
@@ -88,6 +88,11 @@ const config: Config = {
       ],
     },
     footer: {
+      logo: {
+        alt: 'Kater Logo',
+        src: 'img/kater-docs.png',
+        width: 200
+      },
       style: 'dark',
       copyright: `Copyright © ${new Date().getFullYear()} Kater.AI, Inc.`,
     },

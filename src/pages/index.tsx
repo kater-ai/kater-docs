@@ -16,13 +16,13 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        {/* <div className={styles.buttons}> */}
-          {/* <Link
+        <div className={styles.buttons}>
+          {<Link
             className="button button--secondary button--lg"
             to="/docs/guides">
-            Kater Tutorial - 5min ⏱️
-          </Link> */}
-        {/* </div> */}
+            Get Started - 10 min 🚀
+          </Link>}
+        </div>
       </div>
     </header>
   );
@@ -33,7 +33,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={""} /*Leaving this blank for cleanliness*/
-      description="Transform your data with AI.">
+      description="Turn non-technical business experts into data analytics leads.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
