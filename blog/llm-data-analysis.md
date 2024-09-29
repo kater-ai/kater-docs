@@ -1,18 +1,22 @@
 ---
-slug: OH, NO, AI IS GOING TO REPLACE YOUR DATA ANALYSTS
-title: OH, NO, AI IS GOING TO REPLACE YOUR DATA ANALYSTS
+slug: OH NO, AI IS GOING TO REPLACE YOUR DATA ANALYSTS
+title: OH NO, AI IS GOING TO REPLACE YOUR DATA ANALYSTS
 authors: [robin]
 ---
 
 Ok, now that we've got the click baity title out of the way, actually not really.
+
+From our experiments at Kater, as a natural consequence of sucking at math, LLMs also kind of suck at analyzing datasets.
+
+Worry not, all is not lost! In this post I aim to show how LLMs can augment analysts workflow to enable new avenues of inquiry and foster insights using code generation.
+
+<!-- truncate -->
+
 It turns out, LLMs kind of suck at math right now, and you know what math is kind of important for? Drumroll please,
 brrrrrrrrr tshh, that's right: data analysis.
 
 Now this doesn't mean that LLMs won't get better at math, or that we won't come up with other neural network architectures
 that are much better at complex reasoning over datasets (I bet there are many PHD's already working on this currently).
-
-However, from our experiments at Kater, as a natural consequence of sucking at math LLMs also kind of suck at analyzing datasets.
-Worry not, all is not lost! In this post I aim to show how LLMs can augment analysts workflow to enable new avenues of inquiry and foster insights using code generation.
 
 **All the files for the following can be found in our [github repo](https://github.com/kater-ai/data-analysis-experiment).**
 

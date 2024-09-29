@@ -23,7 +23,7 @@
   --ifm-color-primary-light: #004e6c;
   --ifm-color-primary-lighter: #006e9a;
   --ifm-color-primary-lightest: #0085B8;
-  --ifm-code-font-size: 90%;
+  --ifm-code-font-size: 90%;  
   
   --docusaurus-highlighted-code-line-bg: #001219;
 }
@@ -41,8 +41,10 @@ html[data-theme='dark'] {
   --ifm-button-background-color: #08668a;
   --ifm-footer-background-color: #001219;
   --ifm-navbar-background-color: #00212f;
+  --ifm-heading-color: #c0c0c0;
+  --ifm-font-color-base-inverse: #c0c0c0;
 
-  --ifm-color-primary: #0089a4;
+  --ifm-color-primary: #00d5ff;
   --ifm-color-primary-dark: rgb(20, 132, 176);
   --ifm-color-primary-darker: #0e6f96;
   --ifm-color-primary-darkest: #105976;
@@ -54,9 +56,63 @@ html[data-theme='dark'] {
   --ifm-font-family-base: 'Open Sans', sans-serif;
 }
 
-.sidebar {
+ .sidebar {
   font-size: 12px;
+  background-color: rgb(0,18,25,0.5);
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+} 
+
+.theme-doc-sidebar-container {
+  border-right-color: rgba(178, 178, 178, 0.1) !important;
 }
+
+.button.button--secondary {
+  background-color: rgb(4,34,46, 0.3);
+  color: #0085B8;
+  border-color: #004e6c;
+  font-weight: 500;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+}
+
+.card {
+  background-color: rgb(0,18,25,0.2);
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+}
+
+.theme-admonition {
+  opacity: .8 !important; 
+  backdrop-filter: blur(10px) !important; 
+  -webkit-backdrop-filter: blur(10px) !important; 
+}
+
+.hero {
+  background-color: transparent;
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 1px 1px rgba(178, 178, 178, 0.1);
+  -webkit-backdrop-filter: blur(10px); 
+}
+
+.navbar {
+  background-color: rgb(0,18,25,0.5);
+  box-shadow: 0 1px 1px rgba(178, 178, 178, 0.1);
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+}
+
+.footer {
+  background-color: rgb(4,34,46, 0.3);
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+}
+
+body {
+  background-image: url("/static/img/bg_gradient.jpg") !important;
+  background-size: contain;
+ }
 
 .beta-text {
   font-size: smaller;
