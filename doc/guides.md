@@ -33,6 +33,7 @@ Build at the speed of thought, extract actionable insights, and turn your stakeh
 ## How it works
 ### What is a Playbook?
 
+
 #### Decision trees are the most natural and effective way to brainstorm solutions to complex business problems. 
 
 What if you could brainstorm a flow using plain English, rapidly transform it into SQL, and use the flow to generate reports dynamically?
