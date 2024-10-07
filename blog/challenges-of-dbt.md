@@ -1,17 +1,28 @@
 ---
-slug: Navigating the Challenges of dbt
-title: Navigating the Challenges of dbt
+slug: Navigating the Challenges of Data Transformation
+title: Navigating the Challenges of Data Transformation
 authors: [yvonne]
+date: 2024-03-21T18:00
 ---
+
+Data transformation has been historically seen as a means to an end. 
+
+It's magically where "data gets cleaned" and "prepared" before being fed into your favorite BI tool.
+
+However, it's one of the most important areas to invest in, especially in the age of AI. 
+
+<div style={{ display: "flex", justifyContent: "center", padding: "0rem 0 0rem 0" }}>
+    <img src={require("../blog/img/data_transformations.jpeg").default} width="800" />
+</div>
 
 dbt introduced a different approach of bringing software development best practices to data analytics. By allowing for modularity and repeatability of SQL code, dbt infused many analytics teams with guardrails to improve data quality and workflow efficiency. 
 
-After speaking to over 30 companies regarding their experiences with dbt, we want to elucidate our findings on some pitfalls of dbt. 
+dbt is currently the best in-class data transformation tool, companies are starting to notice some key problems that dbt creates and fails to address.
 
-Although dbt is currently the best in-class data transformation tool, companies are starting to notice some key problems that dbt creates and fails to address.
+I'll outline them below.
 
 <!-- truncate -->
-
+----
 ## Limiting Transformation Framework
 One dbt model = one data warehouse object (view, table). 
 
@@ -59,6 +70,9 @@ While the modern data stack often leans towards "throwing money at the problem,"
 
 Some companies we've engaged with invested over a year rebuilding their dbt models with a different logical framework to address and optimize for prohibitively high Snowflake costs.
 
+## What's Next?
+There's much to be desired in the world of data transformation.
 
-## Conclusion
-Unanimously, data leaders agree that there is still a very limited selection of good data transformation tools and platforms, and are eager for other options. 
+As AI + Data comes to the forefront of executives' minds, investing in data transformation will build the foundation of clean, correct, well-modeled data structures. 
+
+It's an absolutely imperative part of any data team's stack.

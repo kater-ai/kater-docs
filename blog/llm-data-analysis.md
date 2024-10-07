@@ -1,27 +1,31 @@
 ---
-slug: OH NO, AI IS GOING TO REPLACE YOUR DATA ANALYSTS
-title: OH NO, AI IS GOING TO REPLACE YOUR DATA ANALYSTS
+slug: Limit-Testing and Comparing LLMs for Data Analysis
+title: Limit-Testing and Comparing LLMs for Data Analysis
 authors: [robin]
+date: 2024-06-14T18:00
 ---
 
-Ok, now that we've got the click baity title out of the way, actually not really.
+In our experiments at Kater, we’ve uncovered a fundamental challenge: 
 
-From our experiments at Kater, as a natural consequence of sucking at math, LLMs also kind of suck at analyzing datasets.
+LLMs, as they currently stand, struggle with math. And you know what math is critical for? Drumroll, please... data analysis!
 
-Worry not, all is not lost! In this post I aim to show how LLMs can augment analysts workflow to enable new avenues of inquiry and foster insights using code generation.
+<div style={{ display: "flex", justifyContent: "center", padding: "0rem 0 2rem 0" }}>
+    <img src={require("../blog/img/using_llms_for_analysis.jpeg").default} width="900" />
+</div>
+
+While LLMs excel in many areas, complex mathematical reasoning over datasets isn’t one of them—yet. 
+
+But don’t worry, it’s not all doom and gloom. Despite these limitations, LLMs can still augment an analyst's workflow in powerful ways, particularly through code generation. This opens new avenues of inquiry and fosters deeper insights, even if the models aren’t math whizzes just yet.
+
+In this post, we’ll explore how LLMs can be leveraged to supercharge data analysis by working alongside analysts, and how future advancements may further close the gap in their mathematical capabilities.
 
 <!-- truncate -->
-
-It turns out, LLMs kind of suck at math right now, and you know what math is kind of important for? Drumroll please,
-brrrrrrrrr tshh, that's right: data analysis.
-
-Now this doesn't mean that LLMs won't get better at math, or that we won't come up with other neural network architectures
-that are much better at complex reasoning over datasets (I bet there are many PHD's already working on this currently).
-
+----
 **All the files for the following can be found in our [github repo](https://github.com/kater-ai/data-analysis-experiment).**
 
 **TLDR: While LLMs are currently bad at numerical data analysis, they can be used to hypothesize interesting (non numerical) patterns in the data and their code generation abilities can be leveraged by analysts to explore their datasets**
 
+----
 ## The Problem
 
 Ok, so lets say you're a business analyst at [AdventureWorks](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms) and you're trying to get some insight into the following business question:

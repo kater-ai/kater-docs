@@ -24,13 +24,16 @@
   --ifm-color-primary-lighter: #006e9a;
   --ifm-color-primary-lightest: #0085B8;
   --ifm-code-font-size: 90%;  
+  --ifm-font-letter-spacing: 0.5em;
   
   --docusaurus-highlighted-code-line-bg: #001219;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 html[data-theme='dark'] {
-  --ifm-font-color-base: #c0c0c0;
+  --ifm-font-color-base: #cfcfcf;
+  --ifm-font-letter-spacing: 0.03rem;
+  --ifm-font-line-height: 1.8;
 
   --ifm-background-color: #001219;
   --ifm-contrast-background-dark-value: #001219;
@@ -112,6 +115,8 @@ html[data-theme='dark'] {
 body {
   background-image: url("/static/img/bg_gradient.jpg") !important;
   background-size: contain;
+  letter-spacing: var(--ifm-font-letter-spacing);
+  line-height: var(--ifm-font-line-height);
  }
 
 .beta-text {
