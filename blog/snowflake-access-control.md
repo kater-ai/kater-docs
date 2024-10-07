@@ -2,14 +2,19 @@
 slug: Access Control Framework Design
 title: Guide to Access Control Framework Design
 authors: [yvonne]
+date: 2024-05-03T18:00
 ---
 
 When designing a data warehouse's permissions and security framework, having clear guardrails for access control is fundamental to ensuring security compliance and governance as your company scales. 
 
+<div style={{ display: "flex", justifyContent: "center", padding: "0rem 0 2rem 0" }}>
+    <img src={require("../blog/img/access_control.jpeg").default} width="900" />
+</div>
+
 This blog will help you design the rules of your access control by providing some templates and frameworks. 
 
 <!-- truncate -->
-
+----
 ## General Frameworks
 #### Discretionary Access Control (DAC) 
 Imagine each object in a house has an owner, and that owner holds the keys to that object. The owner can choose to share their keys with others, allowing them access to the object. It's like the owner of a room deciding who gets a key to enter.
