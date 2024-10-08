@@ -5,6 +5,9 @@
  */
 
 /* You can override the default Infima variables here. */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --ifm-background-color: #001219;
   --ifm-contrast-background-dark-value: #001219;
@@ -25,15 +28,23 @@
   --ifm-color-primary-lightest: #0085B8;
   --ifm-code-font-size: 90%;  
   --ifm-font-letter-spacing: 0.5em;
+  --ifm-font-family-base: "Inter", sans-serif;  
+  
+  --ifm-heading-letter-spacing: 0.04rem;
+  --ifm-heading-line-height: 1.3;
   
   --docusaurus-highlighted-code-line-bg: #001219;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 html[data-theme='dark'] {
-  --ifm-font-color-base: #cfcfcf;
+  --ifm-font-color-base: #dadada;
   --ifm-font-letter-spacing: 0.03rem;
   --ifm-font-line-height: 1.8;
+  --ifm-font-weight-base: 350;
+
+  --ifm-heading-letter-spacing: 0.04rem;
+  --ifm-heading-line-height: 1.3;
 
   --ifm-background-color: #001219;
   --ifm-contrast-background-dark-value: #001219;
@@ -44,7 +55,7 @@ html[data-theme='dark'] {
   --ifm-button-background-color: #08668a;
   --ifm-footer-background-color: #001219;
   --ifm-navbar-background-color: #00212f;
-  --ifm-heading-color: #c0c0c0;
+  --ifm-heading-color: #ededed;
   --ifm-font-color-base-inverse: #c0c0c0;
 
   --ifm-color-primary: #00d5ff;
@@ -56,11 +67,41 @@ html[data-theme='dark'] {
   --ifm-color-primary-lightest: #c0d6df;
   --docusaurus-highlighted-code-line-bg: #02668d;
 
-  --ifm-font-family-base: 'Open Sans', sans-serif;
+  --ifm-font-family-base: "Inter", sans-serif;
+}
+
+@media screen and (max-width: 996px) {
+  :root {
+    --ifm-font-size-base: 18px;
+  }
+  .hero .hero__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 997px) {
+  :root {
+    --ifm-font-size-base: 17px;
+  }
+}
+
+article {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu__list .menu__link {
+  font-size: 16px; 
+  font-weight: 350; 
+}
+
+.menu__list .menu__link--sublist {
+  font-size: 16px;
+  font-weight: 350;
 }
 
  .sidebar {
-  font-size: 12px;
   background-color: rgb(0,18,25,0.5);
   backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px); 
@@ -104,12 +145,16 @@ html[data-theme='dark'] {
   box-shadow: 0 1px 1px rgba(178, 178, 178, 0.1);
   backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px); 
+  font-size: 16px; 
+  font-weight: var(--ifm-font-weight-base) !important;
 }
 
 .footer {
   background-color: rgb(4,34,46, 0.3);
   backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px); 
+  font-size: 13px; 
+  font-weight: var(--ifm-font-weight-base) !important;
 }
 
 body {
@@ -117,6 +162,7 @@ body {
   background-size: contain;
   letter-spacing: var(--ifm-font-letter-spacing);
   line-height: var(--ifm-font-line-height);
+  font-weight: var(--ifm-font-weight-base);
  }
 
 .beta-text {
