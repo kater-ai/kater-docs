@@ -15,11 +15,15 @@ Kater can connect to MS-SQL using the `mssql` connection type. This guide will w
 * Everything is encrypted at rest and in-transit.
 :::
 
+----
+
 ## Prerequisites
 In your MS-SQL server, 
 1. Whitelist Kater's static IP address `54.183.87.164`, so Kater's server can connect to your MS-SQL instance through the firewall. 
 2. Create a new user with read-only access to `sys.schemas`, `information_schema.columns`, and `information_schema.tables`. This is required for Kater to fetch metadata about your tables and columns.
 3. The user should have read-only access to any objects you want to query in Kater.
+
+----
 
 ## Connect to Kater
 Once your MS-SQL user is ready, go to your Kater Portal and follow these steps to connect to Snowflake.

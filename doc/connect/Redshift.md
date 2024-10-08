@@ -12,6 +12,8 @@ sidebar_position: 5
 * Everything is **encrypted** at rest and in-transit. 
 :::
 
+----
+
 ## Prerequisites
 1. [Create an IAM user](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-identity-based.html#redshift-policy-managed-policies-data-full-access) with `AmazonRedshiftDataFullAccess` policy. 
     :::note 
@@ -23,6 +25,7 @@ sidebar_position: 5
 2.  [Grant `select` access](https://docs.aws.amazon.com/redshift/latest/dg/r_GRANT.html) for the desired tables in Redshift to the new IAM user you created.
 3. You'll need your [Access Key ID and Secret Key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) for the new IAM user you created.
 
+----
 
 ## Connect to Kater
 Go to your Kater Portal and follow these steps to connect to Redshift.

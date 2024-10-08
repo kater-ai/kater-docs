@@ -95,11 +95,15 @@ Since LLMs are great at translating technical language into business user-friend
 
 Data will become more integral to business users' everyday workflow. 
 
+----
+
 ## Who are the people who will benefit the most from AI + Data applications? 
 
 Curious, data-driven individuals who don't really know how to code. Digging deeper comes naturally to them. They question everything, they aren't intimidated by numbers, but rather get excited when they have access to more numbers.
 
 If this sounds like you, [reach out](https://www.kater.ai/waitlist). We'd love to chat.
+
+----
 
 ## Conclusion
 In short- no, there is **not** too much hype around AI and Data. 

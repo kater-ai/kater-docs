@@ -14,6 +14,8 @@ Kater can connect to BigQuery using the `BigQuery` connection type.
 * Everything is encrypted at rest and in-transit. 
 :::
 
+----
+
 ## Prerequisites
 1. [Create a BigQuery role](https://cloud.google.com/iam/docs/creating-custom-roles) with at least the following permissions:
 ```bigquery.datasets.get
@@ -60,6 +62,8 @@ Make sure to store the key file securely, because it can be used to authenticate
 </details>
 
 Make sure you copy the above generated `Key` for the Kater Portal.
+
+----
 
 ## Connect to Kater
 Go to your Kater Portal and follow these steps to connect to BigQuery.

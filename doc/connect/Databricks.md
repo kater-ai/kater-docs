@@ -14,6 +14,8 @@ Kater can connect to Databricks using the `Databricks` connection type.
 * Everything is encrypted at rest and in-transit. 
 :::
 
+----
+
 ## Prerequisites
 ### 1. Create a [Personal Access Token (PAT)](https://docs.databricks.com/en/dev-tools/go-sql-driver.html#databricks-personal-access-token-authentication)
 <details>
@@ -51,13 +53,14 @@ Copy this token, as it represents your **Access Token**.
 Your **port** is typically **443** unless otherwise specified.
 :::
 
-:::note[Now you have everything you need to connect to Kater, which are:] 
+Now you have everything you need to connect to Kater, which are:
 * Access Token
 * Warehouse Domain
 * Port
 * Warehouse ID
-:::
 
+
+----
 
 ## Connect to Kater
 Go to your Kater Portal and follow these steps to connect to Databricks.
