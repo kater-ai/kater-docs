@@ -39,6 +39,9 @@
     "@docusaurus/types": "^3.5.2",
     "typescript": "~5.2.2"
   },
+  "overrides": {
+    "path-to-regexp": "^3.3.0"
+  },
   "browserslist": {
     "production": [
       ">0.5%",
