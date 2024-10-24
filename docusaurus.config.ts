@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Kater.ai Docs',
   tagline: 'Turn non-technical business experts into data analytics leads.',
-  favicon: 'img/Favicon_kater_docs.png',
+  favicon: 'img/favicon-docs-rounded.png',
 
   // Set the production url of your site here
   url: 'https://docs.kater.ai',
