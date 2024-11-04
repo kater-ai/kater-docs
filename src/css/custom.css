@@ -38,8 +38,8 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 html[data-theme='dark'] {
-  --ifm-font-color-base: #dadada;
-  --ifm-font-letter-spacing: 0.03rem;
+  --ifm-font-color-base: #efefef;
+  --ifm-font-letter-spacing: 0.02rem;
   --ifm-font-line-height: 1.8;
   --ifm-font-weight-base: 350;
 
@@ -107,8 +107,8 @@ article {
 
  .sidebar {
   background-color: rgb(0,18,25,0.5);
-  backdrop-filter: blur(10px); 
-  -webkit-backdrop-filter: blur(10px); 
+  backdrop-filter: blur(20px); 
+  -webkit-backdrop-filter: blur(20px); 
 } 
 
 .theme-doc-sidebar-container {
@@ -121,31 +121,53 @@ article {
   border-color: #004e6c;
   font-weight: 500;
   border-radius: 1rem;
-  backdrop-filter: blur(10px); 
-  -webkit-backdrop-filter: blur(10px); 
+  backdrop-filter: blur(20px); 
+  -webkit-backdrop-filter: blur(20px); 
 }
 
 .card {
-  background-color: rgb(0,18,25,0.2);
-  backdrop-filter: blur(10px); 
-  -webkit-backdrop-filter: blur(10px); 
+  background-color: rgba(0, 18, 25, 0.348);
+  backdrop-filter: blur(20px); 
+  -webkit-backdrop-filter: blur(20px); 
 }
 
 .theme-admonition {
-  opacity: .8 !important; 
-  backdrop-filter: blur(10px) !important; 
-  -webkit-backdrop-filter: blur(10px) !important; 
+  opacity: 1 !important;
+  backdrop-filter: blur(70px);
+  -webkit-backdrop-filter: blur(70px);
+  border: 0.5px solid rgba(169, 169, 169, 0.5);
 }
+
+.theme-admonition.theme-admonition-note {
+  background-color: rgba(110, 110, 110, 0.166) !important;
+}
+
+.theme-admonition.theme-admonition-tip {
+  background-color: rgba(24, 132, 0, 0.292) !important;
+}
+
+.theme-admonition.theme-admonition-warning {
+  background-color: rgb(73, 69, 0) !important;
+}
+
+.theme-admonition.theme-admonition-danger {
+  background-color: rgba(255, 99, 71, 0.4) !important;
+}
+
+.theme-admonition.theme-admonition-info {
+  background-color: rgba(68, 153, 181, 0.201) !important;
+}
+
 
 .hero {
   background-color: transparent;
-  backdrop-filter: blur(10px); 
+  backdrop-filter: blur(20px); 
   box-shadow: 0 1px 1px rgba(178, 178, 178, 0.1);
-  -webkit-backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(20px); 
 }
 
 .navbar {
-  background-color: rgb(0,18,25,0.5);
+  background-color: rgba(0, 18, 25, 0.591);
   box-shadow: 0 1px 1px rgba(178, 178, 178, 0.1);
   backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px); 
@@ -154,11 +176,12 @@ article {
 }
 
 .footer {
-  background-color: rgb(4,34,46, 0.3);
-  backdrop-filter: blur(10px); 
-  -webkit-backdrop-filter: blur(10px); 
+  background-color: rgb(0,18,25,0.5);
+  backdrop-filter: blur(20px); 
+  -webkit-backdrop-filter: blur(20px); 
   font-size: 13px; 
   font-weight: var(--ifm-font-weight-base) !important;
+  border-top: 0.5px solid rgba(169, 169, 169, 0.272);
 }
 
 body {
