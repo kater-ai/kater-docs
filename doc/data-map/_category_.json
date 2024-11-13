@@ -3,6 +3,6 @@
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "The data map defines all the semantic and SQL relationships between your tables."
+    "description": "The data map defines semantic meaning of your tables, and joins between your tables."
   }
 }

@@ -181,7 +181,7 @@ article {
   -webkit-backdrop-filter: blur(20px); 
   font-size: 13px; 
   font-weight: var(--ifm-font-weight-base) !important;
-  border-top: 0.5px solid rgba(169, 169, 169, 0.272);
+  border-top: 0.5px solid rgba(169, 169, 169, 0.146);
 }
 
 body {
