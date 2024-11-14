@@ -1,0 +1,30 @@
+name: Kater Docs CI
+
+on:
+  pull_request:
+    branches:
+      - main
+  merge_group:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build Project
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        id: setup-node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/iron"
+
+      - name: Build web project
+        id: build-web
+        run: |
+          npm install
+          npm run build
