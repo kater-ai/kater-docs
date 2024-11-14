@@ -87,7 +87,7 @@ const config: Config = {
     // },
     zoom: {
       // CSS selector to apply the plugin to, defaults to '.markdown img'
-      selector: 'img',
+      selector: 'img:not(.navbar img):not(.footer img)',
       background: {
         light: 'rgb(0 18 25)',
         dark: 'rgb(0 18 25)',
