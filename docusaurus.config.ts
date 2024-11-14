@@ -6,6 +6,7 @@ const config: Config = {
   title: 'Kater.ai Docs',
   tagline: 'Turn non-technical business experts into data analytics leads.',
   favicon: 'img/favicon-docs-rounded.png',
+  plugins: [require.resolve("docusaurus-plugin-image-zoom")],
 
   // Set the production url of your site here
   url: 'https://docs.kater.ai',
@@ -84,17 +85,15 @@ const config: Config = {
 
     //   //... other Algolia params
     // },
-    imageZoom: {
+    zoom: {
       // CSS selector to apply the plugin to, defaults to '.markdown img'
-      selector: '.markdown img',
-      // Optional medium-zoom options
-      // see: https://www.npmjs.com/package/medium-zoom#options
-      options: {
-        margin: 24,
-        background: '#001219',
-        scrollOffset: 0,
-        container: '#zoom-container',
-        template: '#zoom-template',
+      selector: 'img',
+      background: {
+        light: 'rgb(0 18 25)',
+        dark: 'rgb(0 18 25)',
+      },
+      config: {
+        // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
       },
     },
     colorMode: {
