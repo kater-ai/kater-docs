@@ -84,7 +84,7 @@ As a result, data teams are often inundated with adhoc requests from decision ma
 
 When decisions are made, they aren't defined and tracked.
 
-Companies are left blind to how they used data in the past to made decisions, and how they can use the same data to make decisions moving forward. 
+Companies are left blind to how they used data in the past to make decisions, and how they can use the same data to make decisions moving forward. 
 
 Kater provides the platform to map exactly this.
 

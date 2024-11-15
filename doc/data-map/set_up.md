@@ -61,4 +61,4 @@ The finished Data Map should look something like this (might be more complicated
     <img src={require("../../static/img/finished_data_map.png").default} width="1000" />
 </div>
 
-## 3. You're ready to [build a Playbook](../playbooks).
+## 3. You're ready to [build a Playbook](../playbooks/).
