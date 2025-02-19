@@ -117,4 +117,4 @@ To import new tables, click the `Refresh` button on the bottom to retrieve new m
     <img src={require("../../static/img/all_tables.png").default} width="1000" />
 </div>
 
-### 8. You're ready to [create a Persona](../personas/) so you can add these tables to a team.
+### 8. You're ready to [create a Persona](/docs/personas/) so you can add these tables to a team.

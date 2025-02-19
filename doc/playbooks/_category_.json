@@ -3,6 +3,6 @@
     "position": 4,
     "link": {
       "type": "generated-index",
-      "description": "A playbook is a decision tree of SQL."
+      "description": "A playbook is a decision tree of Jupyter notebooks."
     }
   }

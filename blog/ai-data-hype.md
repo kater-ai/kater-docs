@@ -43,7 +43,7 @@ As of today, 9/23/2024:
 2. The user's prompting matters **a lot more than you'd think**. 
     * Users need to know exactly how to ask the right question in the right format.
     * Changing one word could change the entire query. 
-    * We're addressing and mitigating this through [Kater's Playbooks](../../docs/playbooks/).
+    * We're addressing and mitigating this through [Kater's Playbooks](/docs/playbooks/playbook_overview).
 3. A **human in the loop** is required.
     * Since AI is probabilistic, there's chance for error. For any business critical decisions, there should still be a human verifying the responses. 
 
@@ -87,7 +87,7 @@ Resources will be spent continuously improving the decision trees which power th
 </div>
 *Data teams can structure which questions to ask, which hypotheses to verify, and give users a clear path towards actionable insights.*
 
-If you're interested in learning more about the Decision Journey approach, [click here](../../docs/playbooks/) to see how the team at kater.ai are building this next-gen solution.
+If you're interested in learning more about the Decision Journey approach, [click here](/docs/playbooks/playbook_overview) to see how the team at kater.ai are building this next-gen solution.
 
 ### 3. Organizations as a whole will become more data-driven and data-literate.
 
@@ -101,7 +101,7 @@ Data will become more integral to business users' everyday workflow.
 
 Curious, data-driven individuals who don't really know how to code. Digging deeper comes naturally to them. They question everything, they aren't intimidated by numbers, but rather get excited when they have access to more numbers.
 
-If this sounds like you, [reach out](https://www.kater.ai/waitlist). We'd love to chat.
+If this sounds like you, [reach out](https://www.kater.ai/). We'd love to chat.
 
 ----
 
