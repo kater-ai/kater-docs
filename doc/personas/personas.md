@@ -44,5 +44,5 @@ Navigate to the Team tab and add existing members to your new Persona.
     <img src={require("../../static/img/add_team_members_persona.png").default} width="1000" />
 </div>
 
-### 5. You're ready to start [setting up your Data Map for the persona's tables](../data-map/set_up).
+### 5. You're ready to start [setting up your Data Map for the persona's tables](../data-map/overview).
 

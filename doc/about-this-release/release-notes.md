@@ -19,5 +19,5 @@ For a complete list of known issues in this release, see [Known issues](/docs/ab
 
 #### For the First User
 ##### *Getting Started with Kater*
-> Users now can request for priority access to Kater's web UI through our [Waitlist](https://www.kater.ai/waitlist). Once you have access, read more about how to get started in the [Welcome doc](/docs/guides). 
+> Users now can request for priority access to Kater through our [30 Day Trial](https://www.kater.ai). Once you have access, read more about how to get started in the [Welcome doc](/docs). 
 

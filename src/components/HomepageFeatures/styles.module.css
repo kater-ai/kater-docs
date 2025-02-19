@@ -1,8 +1,13 @@
 .features {
-  display: flex;
+  background-image: url('/img/homepage_bg_gradient.jpg');
+  background-size: cover; /* Ensures the background covers the entire container */
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw; /* Full viewport width */
+  min-height: 40vh; /* At least full viewport height */
+  display: flex; /* Helps center content */
   align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+  justify-content: center;
 }
 
 .featureSvg {

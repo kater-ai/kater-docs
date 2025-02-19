@@ -3,10 +3,20 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Kater.ai Docs',
-  tagline: 'Turn non-technical business experts into data analytics leads.',
+  trailingSlash: true,
+  title: 'Kater Documentation',
+  tagline: 'The first data decision engineering platform.',
   favicon: 'img/favicon-docs-rounded.png',
-  plugins: [require.resolve("docusaurus-plugin-image-zoom")],
+  plugins: [require.resolve("docusaurus-plugin-image-zoom"),
+  async function debugPlugin(context, options) {
+    return {
+      name: 'debug-plugin',
+      async contentLoaded({ content, actions }) {
+        console.log('Processed Docs:', Object.keys(content || {}));
+      },
+    };
+  },
+  ],
 
   // Set the production url of your site here
   url: 'https://docs.kater.ai',
@@ -31,9 +41,9 @@ const config: Config = {
       {
         docs: {
           path: 'doc',
+          routeBasePath: 'docs',
+          include: ["**/*.md"],
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/kater-ai/kater-docs/',
         },
@@ -110,10 +120,9 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Guides',
+          label: 'Docs',
+          to: '/docs',
         },
         { to: '/blog', label: 'Kater Kafé', position: 'left' },
       ],

@@ -9,26 +9,26 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Automate 85% of Data Reporting',
+    title: 'Transparent Decisions',
     description: (
       <>
-        Kater is a data analysis workflow builder. Data teams use Kater to help their stakeholders make revenue-generating decisions by telling a story with their data.
+        Kater's Playbook Reports document decision logic, allowing executives to follow the reasoning behind insights without data team intervention.
       </>
     ), 
   },
   {
-    title: 'Increase Data Literacy',
+    title: 'Reimagined Jupyter Notebooks',
     description: (
       <>
-        Define what questions to ask based on an objective. Automate weekly reports and bring software development best practices into data analysis.
+        Build interactive decision trees, where each node is a live Jupyter notebook that dynamically executes based on real-time data.
       </>
     ),
   },
   {
-    title: 'No More ADHOC Questions',
+    title: 'Continuously Refine',
     description: (
       <>
-        Kater is built to be personalizable, dynamic, and forgiving to non-technical users. Leverage AI to summarize and explain previously complex queries.
+        Set and adjust thresholds in Playbooks to quickly test, refine, and measure the impact of business decisions in real time.
       </>
     ),
   },

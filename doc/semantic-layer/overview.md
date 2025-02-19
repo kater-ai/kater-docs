@@ -1,6 +1,6 @@
 ---
 sidebar_position: 0
-title: Overview
+title: Semantic Modeling Overview
 ---
 
 Semantic modeling in Kater is done in a layered manner, where each layer can promote to the above layer. 
