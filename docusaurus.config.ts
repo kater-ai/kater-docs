@@ -7,16 +7,7 @@ const config: Config = {
   title: 'Kater Documentation',
   tagline: 'The first data decision engineering platform.',
   favicon: 'img/favicon-docs-rounded.png',
-  plugins: [require.resolve("docusaurus-plugin-image-zoom"),
-  async function debugPlugin(context, options) {
-    return {
-      name: 'debug-plugin',
-      async contentLoaded({ content, actions }) {
-        console.log('Processed Docs:', Object.keys(content || {}));
-      },
-    };
-  },
-  ],
+  plugins: [require.resolve("docusaurus-plugin-image-zoom")],
 
   // Set the production url of your site here
   url: 'https://docs.kater.ai',
