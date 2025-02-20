@@ -204,6 +204,7 @@ article {
 
 .hero {
   background-color: transparent;
+  background: url('/img/hero-bg.png') no-repeat center center/cover;
   backdrop-filter: blur(20px); 
   box-shadow: 0 1px 1px rgba(178, 178, 178, 0.1);
   -webkit-backdrop-filter: blur(30px); 

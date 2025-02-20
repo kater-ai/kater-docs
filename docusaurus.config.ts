@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   trailingSlash: true,
   title: 'Kater Documentation',
-  tagline: 'The first data decision engineering platform.',
+  tagline: 'Build your company\'s data blueprint. A powerful way to automate data workflows and generate insights.',
   favicon: 'img/favicon-docs-rounded.png',
   plugins: [require.resolve("docusaurus-plugin-image-zoom")],
 
