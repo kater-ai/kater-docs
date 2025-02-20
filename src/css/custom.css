@@ -89,10 +89,17 @@ html[data-theme='dark'] {
     var(--ifm-color-emphasis-200) 0%,
     var(--ifm-color-emphasis-100) 100%
   );
-  .DocSearch-Hit-content-wrapper {font-weight: 350 !important};
-  .DocSearch-Hit-title > mark {color: #3dcbfa !important};
-  .DocSearch-Hit-source {color: #BCEEFF !important};
-  .DocSearch-Search-Icon {color: #BCEEFF !important};
+}
+
+.DocSearch-Hit-content-wrapper {
+  font-weight: 350;
+}
+
+.DocSearch-Hit-source,
+.DocSearch-Hit-title > mark,
+.DocSearch-Hit-path > mark,
+.DocSearch-Search-Icon {
+  color: #BCEEFF !important;
 }
 
 /* Set max-width for all pages and center content */
