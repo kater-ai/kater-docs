@@ -6,12 +6,16 @@ slug: /
 
 # What is Kater?
 
-<span class="subheader-text">Kater is a decision engineering platform for data teams to provide clear, actionable data recommendations to executives.</span>
+<span class="subheader-text">Kater lets data teams build the blueprint for decision-making.</span>
 
-### Logical, Repeatable Decision-Making
+### Logical, Repeatable Analyses
 Kater transforms how companies make decisions by enabling data teams to build structured **Playbooks** — interactive decision trees where each node is a Jupyter notebook that runs dynamically based on data conditions. 
 
-Connect to any data source, use SQL or Python with AI assistance to build notebooks, set thresholds, and auto-generate reports — driving faster, smarter decisions.
+Kater is like an architect’s blueprint for decision-making. Instead of leaving teams to navigate data like an empty construction site, data teams can build a structured framework to be expanded on.
+
+**The answer to a business question becomes a carefully placed beam, and every analysis done is a sturdy pillar that adds to the team’s foundation.**
+
+With a modernized and familiar Jupyter Notebooks interface and the power of AI that actually understands your business, teams can refine and expand their playbooks, ensuring every decision is built on a consolidated foundation, not guesswork.
 
 <div style={{ display: "flex", justifyContent: "center", padding: "2rem 0 3rem 0" }}>
     <img src={require("../static/img/kater_overview.png").default} width="600" />
@@ -22,7 +26,7 @@ Connect to any data source, use SQL or Python with AI assistance to build notebo
 - **Automated Execution** – Jupyter notebooks run dynamically based on real-time data conditions.  
 - **Shared Variables & Semantics** – Promote variables into a **unified semantic layer** for consistency and reuse across decision nodes.  
 - **Continuous AI Learning** – Playbooks train **Butler AI** to understand your data, enabling executives to ask questions in natural language.  
-- **Transparent Decisions** – Playbook Reports show clear decision logic, allowing executives to ask follow-ups without involving data teams.  
+- **Report Key Takeaways** – Playbook Reports highlight action items and show clear decision logic, allowing executives to ask follow-ups without involving data teams.  
 - **Iterate & Improve** – Set dynamic thresholds to rapidly experiment, refine decisions, and measure business impact in real time.
 
 <div style={{ display: "flex", justifyContent: "center", padding: "2rem 0 3rem 0" }}>
@@ -40,6 +44,13 @@ Data Playbooks are built to capture the **genius of your best analysts** by mimi
 3. Define & save any **reusable metrics**
 4. Run the playbook on a schedule to **generate reports** for your stakeholders
 5. Guide future stakeholders to **ask the right questions** based on their problem
+
+## The first data decision engineering platform
+Running a business without tracking how decisions impact results is like training for a marathon without timing your runs. 
+
+You might be putting in the effort, but without measuring pace and progress, you won’t know if you’re improving or need to adjust your strategy. 
+
+**Kater’s Playbooks give you the data and visibility to assess what’s working, what’s not, and what to consider next—so you can make informed decisions with confidence.**
 
 ## Quickstart
 :::info[Get Set Up In 30 Minutes]
@@ -89,16 +100,12 @@ Kater currently integrates with
 ## Why Now?
 We're a team of former data engineers and analysts with decades of experience working at companies like Microsoft and CREXi, who have committed our lives to helping businesses understand how they’ve used data to make past decisions and show them how to use that same data to drive future success.
 
-### Define & Track Decisions from Data
-Traditional Business Intelligence (BI) platforms tell you what’s happening, but not what questions to ask, or how to interpret the data to drive actions.
+### The current decision-making landscape
+Making decisions with data today is like trying to navigate a road trip without a GPS. You're collecting maps (data), but there’s no real-time feedback on whether you're on the right path. 
 
-As a result, data teams are often inundated with adhoc requests from decision makers because they're unable to obtain the data they need to make a decision.
+You make a turn (a business decision), but there’s no clear way to see if it got you closer to your destination or if you need to adjust.
 
-When decisions are made, they aren't defined and tracked.
-
-Companies are left blind to how they used data in the past to make decisions, and how they can use the same data to make decisions moving forward. 
-
-Kater provides the platform to map exactly this.
+Kater changes that with Playbooks. **They act as your GPS for decision-making, continuously tracking the impact of past actions, learning from business outcomes, and guiding your next move, ensuring data actually drives decisions, not just sits in reports.**
 
 ### Turn Data Into Profit Centers 
 Decision-making journeys can, and should be, pre-defined.
