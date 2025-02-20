@@ -89,10 +89,12 @@ html[data-theme='dark'] {
     var(--ifm-color-emphasis-200) 0%,
     var(--ifm-color-emphasis-100) 100%
   );
+
 }
 
 .DocSearch-Hit-content-wrapper {
   font-weight: 350 !important;
+
 }
 
 .DocSearch-Hit-source,
