@@ -93,7 +93,8 @@ html[data-theme='dark'] {
 }
 
 .DocSearch-Hit-content-wrapper {
-  font-weight: 350;
+  font-weight: 350 !important;
+
 }
 
 .DocSearch-Hit-source,
