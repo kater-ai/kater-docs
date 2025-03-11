@@ -40,7 +40,8 @@
     "typescript": "~5.8.2"
   },
   "overrides": {
-    "path-to-regexp": "^3.3.0"
+    "path-to-regexp": "^3.3.0",
+    "prismjs": "^1.30.0"
   },
   "browserslist": {
     "production": [
