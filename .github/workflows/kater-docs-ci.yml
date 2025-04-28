@@ -1,4 +1,6 @@
 name: Kater Docs CI
+permissions:
+  contents: read
 
 on:
   pull_request:
